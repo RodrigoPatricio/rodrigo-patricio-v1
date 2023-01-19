@@ -7,6 +7,7 @@
 .about-container {
   margin-top: 10vh;
   width: 740px;
+  padding-top: 15px;
 }
 .about-section {
   display: flex;
@@ -21,7 +22,7 @@
 }
 
 .about-text {
-    width: 480px;
+  width: 480px;
 }
 .about-container h4 span {
   font-size: 24px;
@@ -32,32 +33,109 @@
 }
 
 .about-text p a {
-    color: var(--color-blue-light);
-    text-decoration: none;
+  color: var(--color-blue-light);
+  text-decoration: none;
 }
 .about-text p {
-    width: 480px;
-    margin: 30px 0 30px 0;
-    text-align: justify;
+  width: 480px;
+  margin: 30px 0 30px 0;
+
+  font-weight: 400;
+  text-align: justify;
 }
 
 .tech {
-    display: flex;
-    gap: 40px;
-    
+  display: flex;
+  gap: 40px;
 }
 .tech p {
-    display: flex;
-    align-items: center;
-    
-    margin: 0;
-    width: auto;
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  width: auto;
+
+  font-weight: 800;
 }
-.tech span {
-    font-size: 8px;
-    margin-right: 6px;
+p span {
+  font-size: 8px;
+  margin-right: 6px;
+
+  color: var(--color-blue-light);
 }
 
 .experiences-section {
-    margin-top: 10vh;
+  margin-top: 10vh;
+}
+.jobs-btns {
+  width: 100%;
+
+  margin-top: 15px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.jobs-btns .btn {
+  padding: 8px 0 8px 0;
+
+  width: 200px;
+
+  background-color: var(--bg-blue-light);
+
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.jobs-btns .btn.active {
+  background-color: var(--color-blue-light);
+}
+.jobs-btns .btn.active:hover {
+  background-color: var(--color-gray-text);
+}
+
+.jobs-btns .btn:hover {
+  background-color: var(--color-blue-light);
+}
+.jobs-btns .btn:active {
+  transform: scale(0.96);
+}
+
+.job-description {
+  margin-top: 60px;
+  height: 260px;
+}
+.job-description h5 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: -5px;
+}
+
+.job-description h5 a {
+  text-decoration: none;
+  color: var(--color-blue-light);
+}
+.job-description legend {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+.job-description p {
+  margin-top: 10px;
+  font-weight: 400;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.job-description p span {
+  margin-top: 7px;
 }
