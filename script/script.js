@@ -4,6 +4,29 @@ const descriptionTextOne = document.getElementById("description-p1");
 const descriptionTextTwo = document.getElementById("description-p2");
 const descriptionTextThree = document.getElementById("description-p3");
 const btnJobs = document.querySelectorAll(".btn");
+const highlights = document.querySelectorAll(".highlight");
+const highlightEmail = document.getElementById("highlightEmail");
+
+document.getElementById("contact-one").addEventListener("click", () => {
+  highlightEmail.style.color = "#30c1ff";
+  highlightEmail.style.transform = "translateY(-4px) rotate(90deg)";
+  highlightEmail.style.fontSize = "18px";
+  setTimeout(() => {
+    highlightEmail.style.color = "#c4c4c4";
+    highlightEmail.style.transform = "translateY(0px) rotate(90deg)";
+    highlightEmail.style.fontSize = "14px";
+  }, 300);
+  highlights.forEach((item) => {
+    item.style.color = "#30c1ff";
+    item.style.transform = "translateY(-4px)";
+    item.style.width = "32px";
+    setTimeout(() => {
+      item.style.color = "#c4c4c4";
+      item.style.transform = "translateY(0px)";
+      item.style.width = "28px";
+    }, 300);
+  });
+});
 
 document.getElementById("way").addEventListener("click", () => {
   descriptionTitle.innerHTML =
@@ -15,7 +38,7 @@ document.getElementById("way").addEventListener("click", () => {
   descriptionTextTwo.innerHTML =
     "<span>►</span>Working with a variety of different languages, platforms, frameworks and content management systems such as JavaScript, TypeScript, Vue, HTML5, CSS3, WordPress, Webflow and HubSpot.";
   descriptionTextThree.innerHTML =
-    "<span>►</span>Communicate daily with multidisciplinary teams of engineers, designers, producers and customers.";
+    "<span>►</span>Communicate daily with multidisciplinary teams of engineers, designers, managers and customers.";
 
   btnJobs[0].classList.add("active");
   btnJobs[1].classList.remove("active");

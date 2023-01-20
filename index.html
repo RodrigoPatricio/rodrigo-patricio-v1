@@ -17,15 +17,25 @@
         I'm a software engineer (and occasional designer) specializing in
         creating exceptional digital experiences. Currently, I am focused on
         creating accessible and user experience-centric products at
-        <span>Way Digital Consulting</span>.
+        <a href='https://www.way.ag'>Way Digital Consulting</a>.
       </h3>
-      <button class="btn-contact">get in touch</button>
+      <button
+        class="btn-contact"
+        id="contact-one"
+        rel="noreferrer"
+        target="_self"
+      >
+        get in touch
+      </button>
       <p>OR</p>
-      <a href="#about" class="bottom-link">Read More Below</a>
+      <a href="#about" class="bottom-link" rel="noreferrer" target="_self"
+        >Read More Below</a
+      >
 
       <div class="contact-container-left">
         <a href="">
           <svg
+            class="highlight"
             name="whatsapp"
             width="28"
             height="auto"
@@ -45,6 +55,7 @@
         </a>
         <a href="">
           <svg
+            class="highlight"
             name="twitter"
             width="28"
             height="auto"
@@ -64,6 +75,7 @@
         </a>
         <a href="">
           <svg
+            class="highlight"
             name="github"
             width="28"
             height="auto"
@@ -83,6 +95,7 @@
         </a>
         <a href="">
           <svg
+            class="highlight"
             name="linkedin"
             width="28"
             height="auto"
@@ -111,7 +124,11 @@
         <div class="vertical-line"></div>
       </div>
       <div class="contact-container-right">
-        <a href="">rp.patricio@yahoo.com</a>
+        <a
+          href="mailto:rp.patricio@yahoo.com?subject=New Contact!&body=Hi! There's something I'd like to discuss with you. I waiting for your reply. Thanks in advance."
+          id="highlightEmail"
+          >rp.patricio@yahoo.com</a
+        >
         <div class="vertical-line"></div>
       </div>
     </div>
@@ -163,31 +180,38 @@
       <div class="experiences-section">
         <h4><span>My Experiences</span></h4>
         <div class="line"></div>
-        <div class="jobs-btns">
-          <button class="btn active" id="way">Way.Ag</button>
-          <button class="btn" id="yorkie">WHITEYORKIE</button>
-          <button class="btn" id="unimes">UNIMES</button>
+        <div class="expeciences-container">
+          <div class="jobs-btns">
+            <button class="btn active" id="way">Way.Ag</button>
+            <button class="btn" id="yorkie">WHITEYORKIE</button>
+            <button class="btn" id="unimes">UNIMES</button>
+          </div>
+          <div class="job-description">
+            <h5 id="job-title">
+              Full-Stack Developer <a href="">@ Way Digital Consulting</a>
+            </h5>
+            <legend id="job-time">Set 2021 - Present</legend>
+            <p id="description-p1">
+              <span>►</span>Write modern, high-performance, and maintainable
+              code for a diverse range of internal and customer projects.
+            </p>
+            <p id="description-p2">
+              <span>►</span>Working with a variety of different languages,
+              platforms, frameworks and content management systems such as
+              JavaScript, TypeScript, Vue, HTML5, CSS3, WordPress, Webflow and
+              HubSpot.
+            </p>
+            <p id="description-p3">
+              <span>►</span>Communicate daily with multidisciplinary teams of
+              engineers, designers, managers and customers.
+            </p>
+          </div>
         </div>
-        <div class="job-description">
-          <h5 id="job-title">
-            Full-Stack Developer <a href="">@ Way Digital Consulting</a>
-          </h5>
-          <legend id="job-time">Set 2021 - Present</legend>
-          <p id="description-p1">
-            <span>►</span>Write modern, high-performance, and maintainable code
-            for a diverse range of internal and customer projects.
-          </p>
-          <p id="description-p2">
-            <span>►</span>Working with a variety of different languages,
-            platforms, frameworks and content management systems such as
-            JavaScript, TypeScript, Vue, HTML5, CSS3, WordPress, Webflow and
-            HubSpot.
-          </p>
-          <p id="description-p3">
-            <span>►</span>Communicate daily with multidisciplinary teams of
-            engineers, designers, producers and customers.
-          </p>
-        </div>
+      </div>
+      <div class="works-section">
+        <h4><span>My Works</span></h4>
+        <div class="line"></div>
+        <div class="works-container"></div>
       </div>
     </div>
   </body>
