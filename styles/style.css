@@ -40,3 +40,10 @@ a {
 
   cursor: pointer;
 }
+
+p span {
+  font-size: 8px;
+  margin-right: 6px;
+
+  color: var(--color-blue-light);
+}

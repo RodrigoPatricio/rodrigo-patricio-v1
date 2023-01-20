@@ -178,12 +178,6 @@
 
   font-weight: 800;
 }
-p span {
-  font-size: 8px;
-  margin-right: 6px;
-
-  color: var(--color-blue-light);
-}
 
 .experiences-section {
   margin: auto;
