@@ -47,3 +47,26 @@ p span {
 
   color: var(--color-blue-light);
 }
+
+/*#region Scrollbar Styling */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-blue-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-text);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue-light);
+}
+/*#endregion Scrollbar Styling */

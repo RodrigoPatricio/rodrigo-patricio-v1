@@ -55,7 +55,7 @@ document.getElementById("yorkie").addEventListener("click", () => {
   descriptionTextTwo.innerHTML =
     "<span>►</span>Work with various web development tools such as HTML5, CSS3, Javascript (ES6+), Vue 3, React, .";
   descriptionTextThree.innerHTML =
-    "<span>►</span>Developed control and management systems for internal data and for clients on Windows using C# and for the web as PWAs using Vue 3.";
+    "<span>►</span>Developed control and management systems for internal data and for clients on Windows using C# and PWAs using Vue 3.";
 
   btnJobs[0].classList.remove("active");
   btnJobs[1].classList.add("active");
