@@ -209,7 +209,7 @@
 
   width: 200px;
 
-  background-color: var(--bg-blue-dark);
+  background-color: transparent;
 
   font-family: "Mukta", sans-serif;
   font-size: 20px;
@@ -272,4 +272,36 @@
   margin: auto;
   margin-top: 40vh;
   max-width: 1000px;
+}
+
+.works-container {
+  text-align: center;
+
+  margin-top: 30px;
+}
+.works-container h3 {
+  font-size: 28px;
+}
+.works-container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 8px;
+}
+.works-container .highlight-text {
+  color: var(--color-blue-light);
+}
+.works-container img {
+  width: 24px;
+  height: auto;
+}
+.works-container .highlight-description {
+  background-color: var(--bg-blue-light);
+  padding: 8px;
+  border-radius: 6px;
+
+  max-width: 890px;
+  margin: 12px auto auto auto;
 }
