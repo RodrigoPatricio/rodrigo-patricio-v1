@@ -6,6 +6,29 @@
   --color-blue-light: #30c1ff;
 }
 
+/*#region Scrollbar Styling */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-blue-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray-text);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue-light);
+}
+/*#endregion Scrollbar Styling */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,7 +47,7 @@ body {
   font-weight: 700;
 
   background-color: var(--bg-blue-dark);
-  background-image: url('/images/background.png');
+  /* background-image: url('/images/background.png'); */
   background-size: contain;
   color: var(--color-gray-text);
 
@@ -49,26 +72,3 @@ p span {
 
   color: var(--color-blue-light);
 }
-
-/*#region Scrollbar Styling */
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--bg-blue-light);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--color-gray-text);
-  border-radius: 8px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-blue-light);
-}
-/*#endregion Scrollbar Styling */
