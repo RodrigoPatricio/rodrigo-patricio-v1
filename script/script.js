@@ -30,7 +30,7 @@ document.getElementById("contact-one").addEventListener("click", () => {
 
 document.getElementById("way").addEventListener("click", () => {
   descriptionTitle.innerHTML =
-    "Full-Stack Developer <a href=''>@ Way Digital Consulting</a>";
+    "Full-Stack Developer <a href='https://way.ag' target='_blank' rel='noopener noreferrer'>@ Way Digital Consulting</a>";
   descriptionTime.innerHTML = "SET 2021 - Present";
 
   descriptionTextOne.innerHTML =
