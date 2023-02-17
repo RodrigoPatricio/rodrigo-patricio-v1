@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Mukta:wght@400;700;800&display=swap");
 :root {
-  --bg-blue-dark: #1F3139;
+  --bg-blue-dark: #1f3139;
   --bg-blue-light: #385868;
   --color-gray-text: #c4c4c4;
   --color-blue-light: #30c1ff;
@@ -40,14 +40,13 @@ html {
 }
 
 body {
-  /* max-width: 1440px; */
   margin: auto;
 
   font-family: "Mukta", sans-serif;
   font-weight: 700;
 
   background-color: var(--bg-blue-dark);
-  /* background-image: url('/images/background.png'); */
+  background: radial-gradient(173.12% 54.36% at 50% 50%, var(--color-blue-light) -200%, var(--bg-blue-dark) 100%);
   background-size: contain;
   color: var(--color-gray-text);
 
@@ -59,6 +58,56 @@ body {
   position: relative;
 }
 
+section {
+  margin: auto;
+  margin-top: 200px;
+  width: 1000px;
+}
+
+h1 {
+  font-family: "Mukta", sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  color: #f4f4f4;
+
+  line-height: 100%;
+}
+
+h1 span {
+  color: var(--color-blue-light);
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--color-blue-light);
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: -5px;
+}
+
+legend {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
 a {
   text-decoration: none;
   color: var(--color-blue-light);
@@ -66,9 +115,93 @@ a {
   cursor: pointer;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 p span {
   font-size: 8px;
   margin-right: 6px;
 
   color: var(--color-blue-light);
+}
+
+button.btn-contact {
+  background-color: var(--bg-blue-light);
+  color: var(--color-gray-text);
+
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  transition: 0.3s ease;
+
+  margin: 50px 0 25px 0;
+}
+button.btn-contact:hover {
+  background-color: var(--color-blue-light);
+}
+button.btn-contact:active {
+  transform: scale(0.96);
+}
+
+button.btn {
+  padding: 8px 0 8px 0;
+
+  width: 200px;
+
+  background-color: transparent;
+
+  font-family: "Mukta", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-gray-text);
+  text-transform: uppercase;
+
+  border: none;
+  border-left: 4px solid var(--color-gray-text);
+  cursor: pointer;
+
+  text-align: left;
+  padding-left: 40px;
+
+  transition: 0.4s ease;
+}
+
+button.btn.active {
+  border-left: 4px solid var(--color-blue-light);
+  color: var(--color-blue-light);
+}
+button.btn.active:hover {
+  background-color: var(--bg-blue-light);
+}
+
+button.btn:hover {
+  background-color: var(--bg-blue-light);
+}
+
+.line {
+  width: 100%;
+  border: 1px solid var(--color-gray-text);
+}
+
+.filter {
+  filter: drop-shadow(0px 0px 100px var(--color-blue-light));
+}
+
+.footer p {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
 }
