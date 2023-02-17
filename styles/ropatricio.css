@@ -54,12 +54,12 @@
   margin: 5px 0 5px 0;
 }
 
-.contact-container-left svg {
+svg {
   color: var(--color-gray-text);
   transition: 0.2s ease;
 }
 
-.contact-container-left svg:hover {
+svg:hover {
   color: var(--color-blue-light) !important;
   transform: translateY(-4px) !important;
 }
@@ -71,59 +71,18 @@
 }
 
 .home-container {
-  max-width: 80vw;
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  width: 1000px;
   height: 100vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.home-container h1 {
-  font-family: "Jost", sans-serif;
-  font-size: 96px;
-  color: #f4f4f4;
-}
-
-.home-container h2 {
-  font-weight: 800;
-  font-size: 36px;
-}
-
-.home-container h3 {
-  font-weight: 400;
-  font-size: 16px;
-  width: 570px;
-
-  text-align: center;
-}
-
-.home-container button.btn-contact {
-  background-color: var(--color-gray-text);
-  color: var(--bg-blue-dark);
-
-  padding: 8px 15px 8px 15px;
-  border: none;
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  font-family: inherit;
-  font-weight: 800;
-  font-size: 16px;
-  text-transform: uppercase;
-
-  transition: 0.3s ease;
-
-  margin: 50px 0 25px 0;
-}
-.home-container button:hover {
-  background-color: var(--color-blue-light);
-}
-.home-container button.btn-contact:active {
-  transform: scale(0.96);
+.home-container p {
+  width: 750px;
 }
 
 .home-container p {
@@ -132,32 +91,17 @@
 /* #endregion Showcase */
 
 /* #region aboutMe */
-.about-container {
-  margin-top: 10vh;
-  max-width: 1000px;
-  padding-top: 15px;
-}
-.about-section {
+.about {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 140px;
-}
 
-.line {
-  width: 100%;
-  border: 1px solid var(--color-gray-text);
+  padding-top: 15px;
 }
 
 .about-text {
   width: 510px;
-}
-.about-container h4 span {
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  color: var(--color-blue-light);
 }
 
 .about-text p {
@@ -184,18 +128,14 @@
 /* #endregion AboutME */
 
 /* #region experiences */
-.experiences-section {
-  margin: auto;
-  max-width: 1000px;
-  margin-top: 40vh;
-}
-.expeciences-container {
+.expeciences {
   display: flex;
   align-items: flex-start;
   justify-content: left;
   gap: 60px;
   padding-top: 30px;
 }
+
 .jobs-btns {
   width: 200px;
 
@@ -204,61 +144,12 @@
   align-items: flex-start;
   justify-content: left;
 }
-.jobs-btns .btn {
-  padding: 8px 0 8px 0;
-
-  width: 200px;
-
-  background-color: transparent;
-
-  font-family: "Mukta", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--color-gray-text);
-  text-transform: uppercase;
-
-  border: none;
-  border-left: 4px solid var(--color-gray-text);
-  cursor: pointer;
-
-  text-align: left;
-  padding-left: 40px;
-
-  transition: 0.4s ease;
-}
-
-.jobs-btns .btn.active {
-  border-left: 4px solid var(--color-blue-light);
-  color: var(--color-blue-light);
-}
-.jobs-btns .btn.active:hover {
-  background-color: var(--bg-blue-light);
-}
-
-.jobs-btns .btn:hover {
-  background-color: var(--bg-blue-light);
-}
 
 .job-description {
   height: 260px;
 }
-.job-description h5 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: -5px;
-}
 
-.job-description legend {
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-
-  margin-bottom: 30px;
-}
 .job-description p {
-  margin-top: 10px;
-  font-weight: 400;
-
   display: flex;
   align-items: flex-start;
 }
@@ -268,21 +159,13 @@
 }
 /* #endregion experiences */
 
-.works-section {
-  margin: auto;
-  margin-top: 40vh;
-  max-width: 1000px;
-}
-
-.works-container {
+/* #region works */
+.works {
   text-align: center;
 
   margin-top: 30px;
 }
-.works-container h3 {
-  font-size: 28px;
-}
-.works-container .box {
+.works .box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,14 +173,18 @@
 
   margin-bottom: 8px;
 }
-.works-container .highlight-text {
+.works .highlight-text {
   color: var(--color-blue-light);
+  font-size: 16px;
 }
-.works-container img {
+.works .box .highlight-text {
+  font-weight: 400;
+}
+.works img {
   width: 24px;
   height: auto;
 }
-.works-container .highlight-description {
+.works .highlight-description {
   background-color: var(--bg-blue-light);
   padding: 8px;
   border-radius: 6px;
@@ -332,3 +219,23 @@
   background-color: var(--bg-blue-light);
   border-radius: 8px;
 }
+
+/* #endregion works */
+
+
+/* #region contact */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.contact p {
+  
+  width: 800px;
+  margin: auto;
+}
+/* #endregion contact */
